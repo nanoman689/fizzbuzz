@@ -48,3 +48,17 @@ input[type=numMain] {
 	width: 400px;
 	text-align: center;
 }
+
+ul {
+	margin: 0 auto;
+	font-family: 'Arimo', sans-serif;
+	font-size: 1em;
+	width: 7%;
+	text-align: left;
+	padding: 2em;
+	display: block;
+}
+
+li {
+	display: block;
+}
