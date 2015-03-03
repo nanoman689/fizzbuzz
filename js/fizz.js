@@ -6,13 +6,15 @@ $(document).ready(function (){
             console.log("You number is: " + numberGuess);
 
             /* check to see if it's a number */
-            var checkNum = $("#numMain").val();
-            if(checkNum.length == 0) {
+            var checkNum = $("#numMain").val().length;
+            if(checkNum == 0) {
+                console.log(checkNum);
                 alert("You need to enter a number!");
             }
             else {
                 if(jQuery.isNumeric(checkNum)){
                     console.log("Your number is "+ numberGuess);
+                    console.log("Number lenght is " + checkNum);
                 }
                 else {
                     alert("That's not a number!");
@@ -29,7 +31,6 @@ $(document).ready(function (){
                    if (a%5 === 0){
                         console.log("FizzBuzz")
                         $(".numbers").append("FizzBuzz" + "<p></p>");
-                        /* $("").prepend("<p></p>"); */
 
                     } else {
                         console.log("Fizz")
