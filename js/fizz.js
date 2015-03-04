@@ -14,7 +14,15 @@ $(document).ready(function (){
             else {
                 if(jQuery.isNumeric(checkNum)){
                     console.log("Your number is "+ numberGuess);
-                    console.log("Number lenght is " + checkNum);
+                    console.log("Number length is " + checkNum);
+                    
+            /* check the length of the entered number */
+                    if(checkNum >= 4) {
+                        alert("Your number is too big!");
+                        $("#numMain").val("");
+                    } else {
+                        console.log(checkNum);
+                    }
                 }
                 else {
                     alert("That's not a number!");
@@ -22,7 +30,7 @@ $(document).ready(function (){
             }    
 
 
-            /* check the length of the entered number */
+
 
             /* Fizz Buzz time */
         
